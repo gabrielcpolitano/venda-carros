@@ -1,0 +1,255 @@
+:root{
+    --primary:#7fcbe3;
+    --second:#7fdce3;
+    --strong-color:#0e3e41;
+    --background: background-color: #A2A4AA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--background);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23A2A4AA'/%3E%3Cstop offset='1' stop-color='%23E8F3FF'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F8FFEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23F8FFEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23F8FFEE' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23F8FFEE' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; /* Mantém o fundo centralizado */
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0; /* por já te posto ele fixado no topo com "value:0" e o width "100%" não ha necessidade de por a propriedade left*/
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.background-menu {
+    background-color: transparent;
+    display: flex;
+}
+
+.logo {
+    position: relative;
+    font-size: 2em;
+    color: var(--strong-color);
+    user-select: none;
+    padding: 14px 0;
+}
+
+.navigation{
+    position: relative;
+    
+}
+
+p,
+label {
+    color: #444;
+}
+
+.navigation a {
+    position: relative;
+    top: 20px;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: var(--strong-color);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='date'],
+input[type='file'],
+textarea {
+    width: 500px;
+}
+
+
+textarea 
+{
+    padding: 10px 5px;
+}
+
+/* page header */
+.header 
+{
+    height: 160px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.header h3 
+{
+    color: #FFF;
+    margin-top: 0;
+}
+
+/* form container */
+.form-container 
+{
+    background-color: #FdFdFd;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top:-62px;
+}
+
+/* form header */
+.form-header 
+{
+    border-bottom: 1px solid #DFDFDF;
+    height: 45px;
+}
+
+.form-header p 
+{
+    color: #673ab7;
+    border-bottom: 2px solid #673ab7;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+/* form body */
+.form-body 
+{
+    padding: 30px;
+}
+
+.form-title 
+{
+    margin-bottom: 15px;
+}
+
+.form-body p 
+{
+    margin-bottom: 20px;
+}
+
+.required-field 
+{
+    color: #d80835;
+}
+
+.box-input 
+{
+    margin-bottom: 35px;
+}
+
+.block 
+{
+    display: block;
+}
+
+.optional-box 
+{
+    display: inline-block;
+    margin: 0 30px 30px 0;
+}
+
+.optional-list li 
+{
+    list-style: none;
+
+}
+
+.box-input p 
+{
+    margin-bottom: 15px;
+}
+
+.btn-submit 
+{
+    background-color: #673ab7;
+    color: #FFF;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btn-submit:hover {
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7
+}
+
+@media (max-width: 564px) {
+    .form-container {
+        width: 350px;
+    }
+
+    .block {
+        width: 300px;
+    }
+
+    #images {
+        width: 300px;
+    }
+
+    #title.block {
+        width: 300px;
+    }
+
+    #price.block {
+        width: 300px;
+    }
+
+    #brand.block {
+        width: 300px;
+    }
+
+    #model.block {
+        width: 300px;
+    }
+
+    #mileage.block {
+        width: 300px;
+    }
+
+    #purchase_date:empty {
+        width: 300px;
+    }
+}
