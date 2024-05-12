@@ -1,4 +1,3 @@
-
 # Vendas de Carros
 
 Bem-vindo ao repositório do Vendas de Carros, uma plataforma dinâmica para compra com gerenciamento de catálogos de veículos incluindo carros, motos. Isso tudo com a segurança que você precisa.
