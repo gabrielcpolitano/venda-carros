@@ -1,7 +1,7 @@
 # Vendas de Carros
 
 Bem-vindo ao repositório do Vendas de Carros, uma plataforma dinâmica para compra com gerenciamento de catálogos de veículos incluindo carros, motos. Isso tudo com a segurança que você precisa.
-
+ 
 ## Descrição
 
 O Vendas de Carros oferece uma interface amigável para explorar diversos tipos de veículos disponíveis para venda. A plataforma permite filtrar veículos por ano, condição (novo ou usado) e categorias. Os usuários podem visualizar detalhes como preço, ano de fabricação e imagem do veículo.
